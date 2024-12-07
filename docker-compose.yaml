@@ -3,4 +3,4 @@ services:
     image: 'nginx'
     tty: true
     ports:
-      - '4443:443'
+      - '4443:8089'
