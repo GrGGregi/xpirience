@@ -1,6 +1,6 @@
-version: '3.8'
 services:
-  nginx:
-    image: nginx:1-alpine
+  app:
+    image: 'nginx'
+    tty: true
     ports:
-    - 8089:443
+      - '3333:443'
