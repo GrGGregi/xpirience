@@ -1,6 +1,0 @@
-services:
-  app:
-    image: 'nginx'
-    tty: true
-    ports:
-      - '4443:8089'
