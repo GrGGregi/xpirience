@@ -31,7 +31,7 @@
             <input type="email" id="email" name="email" placeholder="Votre email" required>
             
             <label for="message">Message :</label>
-            <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+            <textarea id="message" name="message" placeholder="Votre message pour Xoff" required></textarea>
             
             <button type="submit">Envoyer</button>
         </form>
