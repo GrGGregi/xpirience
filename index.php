@@ -3,38 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaire de Contact</title>
+    <title>KANZen - Accueil</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background-image"></div>
-    <div class="form-container">
-        <h1>Contactez-nous</h1>
-        <?php
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $nom = htmlspecialchars($_POST["nom"]);
-            $email = htmlspecialchars($_POST["email"]);
-            $message = htmlspecialchars($_POST["message"]);
+    <header>
+        <h1>Bienvenue sur KANZen</h1>
+        <p>La solution centralisée pour la digitalisation des TPE/PME</p>
+        <a href="contact.php" class="cta-btn">Contactez-nous</a>
+    </header>
 
-            if (!empty($nom) && !empty($email) && !empty($message)) {
-                echo "<p class='success'>Merci, $nom ! Votre message a été envoyé.</p>";
-            } else {
-                echo "<p class='error'>Veuillez remplir tous les champs.</p>";
-            }
-        }
-        ?>
-        <form action="" method="POST">
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
-            
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" placeholder="Votre email" required>
-            
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" placeholder="Votre message pour Xoff" required></textarea>
-            
-            <button type="submit">Envoyer</button>
-        </form>
-    </div>
+    <section id="features">
+        <h2>Pourquoi choisir KANZen ?</h2>
+        <ul>
+            <li>Centralisation des données</li>
+            <li>Expérience utilisateur optimisée</li>
+            <li>Sécurité renforcée</li>
+            <li>Déploiement rapide</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 xPirience Sàrl - Tous droits réservés</p>
+    </footer>
 </body>
 </html>
+
