@@ -1,80 +1,108 @@
-body, html {
+/* Reset de base */
+* {
     margin: 0;
     padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-}
-
-.background-image {
-    background-image: url('https://via.placeholder.com/1920x1080');
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    filter: brightness(0.7);
-}
-
-.form-container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-h1 {
-    margin-bottom: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin: 10px 0 5px;
-    font-weight: bold;
-}
-
-input, textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    width: 100%;
     box-sizing: border-box;
 }
 
-textarea {
-    resize: vertical;
-    min-height: 100px;
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
 }
 
-button {
-    background: #4CAF50;
+header.hero {
+    height: 100vh;
+    background: url('https://source.unsplash.com/1600x900/?business,technology') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
 }
 
-button:hover {
-    background: #45a049;
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem 3rem;
+    border-radius: 8px;
 }
 
-.success {
-    color: green;
-    font-weight: bold;
+.hero-title {
+    font-size: 4rem;
+    text-transform: uppercase;
 }
 
-.error {
-    color: red;
-    font-weight: bold;
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: #ff4500;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #e63946;
+}
+
+.features {
+    background: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #f0f0f0;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.cta-section {
+    background: #333;
+    color: white;
+    padding: 3rem;
+    text-align: center;
+}
+
+.cta-btn-dark {
+    background: white;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: white;
 }
