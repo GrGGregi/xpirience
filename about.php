@@ -33,4 +33,5 @@ include 'header.php';
     </div>
 </section>
 
+<!-- Footer -->
 <?php include 'footer.php'; ?>
