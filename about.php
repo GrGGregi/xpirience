@@ -1,38 +1,20 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À propos - KANZen</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<?php 
+$title = "À propos - xPirience"; 
+include 'header.php'; 
+?>
 
-<!-- Menu de Navigation -->
-<nav class="navbar">
-    <div class="container">
-        <a href="index.php" class="logo">KANZen</a>
-        <ul class="nav-links">
-            <li><a href="index.php">Accueil</a></li>
-            <li><a href="about.php">À propos</a></li>
-            <li><a href="solution.php">Solution</a></li>
-            <li><a href="contact.php">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-
-<!-- En-tête -->
+<!-- En-tête spécifique -->
 <header class="hero-small">
     <h1>À propos de xPirience</h1>
 </header>
 
-<!-- Section Présentation Centrée -->
+<!-- Contenu de la page -->
 <section class="presentation centered-content">
     <h2>Notre Mission</h2>
-    <p>KANZen est une solution complète développée par xPirience pour centraliser, automatiser et optimiser les processus des TPE et PME.</p>
+    <p>Nous aidons les TPE et PME à réussir leur transformation digitale grâce à des solutions adaptées à leurs besoins.</p>
 </section>
 
-<!-- Section Équipe Centrée -->
+<!-- Section Équipe -->
 <section class="team centered-content">
     <h2>Notre Équipe</h2>
     <div class="team-cards">
@@ -51,11 +33,4 @@
     </div>
 </section>
 
-<!-- Footer -->
-<footer>
-    <p>&copy; 2024 xPirience Sàrl - Tous droits réservés</p>
-    <p>Maintenu avec ♡ par <a href="https://ezyostudio.com" target="_blank">EzyoStudio</a>.</p>
-</footer>
-
-</body>
-</html>
+<?php include 'footer.php'; ?>
