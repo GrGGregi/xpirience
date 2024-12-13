@@ -107,7 +107,7 @@ header.hero h1, header.hero-small h1 {
 }
 
 /* Bouton CTA */
-.cta-btn {
+.cta-btn, .contact-form button {
     display: inline-block;
     background: #ff4500;
     color: white;
@@ -118,9 +118,11 @@ header.hero h1, header.hero-small h1 {
     border-radius: 50px;
     transition: all 0.3s ease;
     margin: 0 auto;
+    border: none;
+    cursor: pointer;
 }
 
-.cta-btn:hover {
+.cta-btn:hover, .contact-form button:hover {
     background: #e63946;
 }
 
@@ -146,7 +148,7 @@ header.hero h1, header.hero-small h1 {
 }
 
 /* Section Services */
-.features .feature-cards, .service-cards {
+.features .feature-cards, .service-cards, .team-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
@@ -231,29 +233,14 @@ footer a:hover {
     border-radius: 5px;
 }
 
-.contact-form button {
-    width: 100%;
-    background: #ff4500;
-    color: white;
-    padding: 1rem;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background: #e63946;
-}
-
 /* Correctif Cards & Listes */
-.team-cards, .solution-details ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
 .team-cards .card, .solution-details ul li {
     margin-bottom: 2rem;
+}
+
+/* Section Localisation */
+.presentation iframe {
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
