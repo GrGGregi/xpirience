@@ -1,60 +1,41 @@
 <?php
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//     $nom = htmlspecialchars(trim($_POST['nom']));
-//     $email = htmlspecialchars(trim($_POST['email']));
-//     $message = htmlspecialchars(trim($_POST['message']));
+require __DIR__ . '/vendor/autoload.php';
 
-//     if (!empty($nom) && !empty($email) && !empty($message)) {
-//         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-//             $to = "contact@xpirience.io";  // Remplacez par votre adresse e-mail
-//             $subject = "Nouveau message de $nom";
-//             $body = "Nom: $nom\nEmail: $email\nMessage:\n$message";
-//             $headers = "From: $email";
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-//             if (mail($to, $subject, $body, $headers)) {
-//                 echo "<script>alert('Message envoyé avec succès !'); window.location.href='contact.php';</script>";
-//             } else {
-//                 echo "<script>alert('Une erreur est survenue lors de l\'envoi. Veuillez réessayer.'); window.location.href='contact.php';</script>";
-//             }
-//         } else {
-//             echo "<script>alert('Adresse e-mail invalide.'); window.location.href='contact.php';</script>";
-//         }
-//     } else {
-//         echo "<script>alert('Veuillez remplir tous les champs.'); window.location.href='contact.php';</script>";
-//     }
-// } else {
-//     echo "<script>alert('Accès non autorisé.'); window.location.href='contact.php';</script>";
-// }
+// Initialiser PHPMailer
+$mail = new PHPMailer(true);
 
-$mail = new PHPMailer();
+try {
+    // Configuration SMTP
+    $mail->isSMTP();
+    $mail->CharSet    = 'UTF-8';
+    $mail->Host       = "mail.infomaniak.ch";  
+    $mail->SMTPDebug  = 0;                     
+    $mail->SMTPAuth   = true;                  
+    $mail->Port       = 465;                   
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $mail->Username   = "no-reply@xpirience.io"; 
+    $mail->Password   = "knBfdHYarHYt277AhCFk"; 
 
-// Settings
-$mail->IsSMTP();
-$mail->CharSet = 'UTF-8';
+    // Configuration de l'email
+    $nom = "Jean Dupont";  // Exemple de valeur
+    $emaily = "jean@example.com"; 
+    $message = "Ceci est un message de test.";
 
-$mail->Host       = "mail.infomaniak.ch";  // SMTP server
-$mail->SMTPDebug  = 0;                     // enables SMTP debug information (for testing)
-$mail->SMTPAuth   = true;                  // enable SMTP authentication
-$mail->Port       = 465;                    // set the SMTP port for the GMAIL server
-$mail->Username   = "no-reply@xpirience.io";            // SMTP account username example
-$mail->Password   = "knBfdHYarHYt277AhCFk";            // SMTP account password example
+    $mail->setFrom('no-reply@xpirience.io', 'Xpirience');   
+    $mail->addAddress('receipt@domain.com');
 
-// Content
-$mail->setFrom('no-reply@xpirience.io');   
-$mail->addAddress('receipt@domain.com');
+    $mail->isHTML(true);                       
+    $mail->Subject = "Nouveau message depuis le site web de Xpirience de $nom";
+    $mail->Body    = "Nom: $nom<br>Email: $emaily<br>Message:<br>$message <b>in bold!</b>";
+    $mail->AltBody = "Nom: $nom\nEmail: $emaily\nMessage:\n$message";
 
-$mail->isHTML(true);                       // Set email format to HTML
-$mail->Subject = 'Here is the subject';
-$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    $mail->send();
+    echo "Message envoyé avec succès !";
 
-$mail->send();
-
+} catch (Exception $e) {
+    echo "Erreur lors de l'envoi du message : {$mail->ErrorInfo}";
+}
 ?>
-<!-- 
-SMTP_HOST=mail.infomaniak.ch
-SMTP_PORT=465
-SMTP_USERNAME=no-reply@xpirience.io
-SMTP_PASSWORD=knBfdHYarHYt277AhCFk
-SMTP_FROM=no-reply@xpirience.io
-SMTP_REPLY_TO=contact@xpirience.io -->
