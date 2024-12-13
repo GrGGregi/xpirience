@@ -8,10 +8,25 @@
 </head>
 <body>
 
+<!-- Menu de Navigation -->
+<nav class="navbar">
+    <div class="container">
+        <a href="index.php" class="logo">KANZen</a>
+        <ul class="nav-links">
+            <li><a href="index.php">Accueil</a></li>
+            <li><a href="about.php">À propos</a></li>
+            <li><a href="solution.php">Solution</a></li>
+            <li><a href="contact.php">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- En-tête -->
 <header class="hero-small">
     <h1>Contactez-nous</h1>
 </header>
 
+<!-- Section Formulaire -->
 <section class="contact-form">
     <h2>Remplissez le formulaire</h2>
     <form action="send_mail.php" method="POST">
@@ -28,8 +43,10 @@
     </form>
 </section>
 
+<!-- Footer -->
 <footer>
     <p>&copy; 2024 xPirience Sàrl - Tous droits réservés</p>
+    <p>Maintenu avec ♡ par <a href="https://ezyostudio.com" target="_blank">EzyoStudio</a>.</p>
 </footer>
 
 </body>
