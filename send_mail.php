@@ -1,5 +1,4 @@
 <?php
-require __DIR__ . '/vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -11,7 +10,7 @@ try {
     // Configuration SMTP
     $mail->isSMTP();
     $mail->CharSet    = 'UTF-8';
-    $mail->Host       = "mail.infomaniak.ch";  
+    $mail->Host       = "mail.infomaniak.com";  
     $mail->SMTPDebug  = 0;                     
     $mail->SMTPAuth   = true;                  
     $mail->Port       = 465;                   
