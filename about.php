@@ -23,15 +23,16 @@
 
 <!-- En-tête -->
 <header class="hero-small">
-    <h1>À propos de KANZen</h1>
+    <h1>À propos de xPirience</h1>
 </header>
 
 <!-- Section Présentation -->
 <section class="presentation">
     <h2>Notre Mission</h2>
-    <p>KANZen est une solution digitale complète développée par xPirience pour centraliser, automatiser et optimiser les processus des TPE et PME.</p>
+    <p>KANZen est une solution complète développée par xPirience pour centraliser, automatiser et optimiser les processus des TPE et PME.</p>
 </section>
 
+<!-- Section Équipe -->
 <section class="team">
     <h2>Notre Équipe</h2>
     <div class="team-cards">

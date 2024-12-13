@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solution KANZen</title>
+    <title>Solution - KANZen</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,19 +23,20 @@
 
 <!-- En-tête -->
 <header class="hero-small">
-    <h1>La solution KANZen</h1>
+    <h1>Découvrez la Solution KANZen</h1>
 </header>
 
 <!-- Section Fonctionnalités -->
 <section class="solution-details">
-    <h2>Vos avantages</h2>
+    <h2>Avantages Clés</h2>
     <ul>
-        <li><strong>Centralisation des données :</strong> Un seul espace pour gérer vos clients et projets.</li>
-        <li><strong>Sécurité avancée :</strong> Hébergement local et conformité RGPD.</li>
-        <li><strong>Déploiement rapide :</strong> Installation simple et évolutive.</li>
+        <li><strong>Centralisation des données :</strong> Un espace unique pour vos clients et projets.</li>
+        <li><strong>Sécurité Avancée :</strong> Hébergement sécurisé et conformité RGPD.</li>
+        <li><strong>Déploiement Rapide :</strong> Installation facile et évolutive.</li>
     </ul>
 </section>
 
+<!-- Section CTA -->
 <section class="cta-section">
     <h2>Besoin de plus d'informations ?</h2>
     <a href="contact.php" class="cta-btn">Contactez-nous</a>

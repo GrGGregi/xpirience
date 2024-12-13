@@ -28,7 +28,7 @@
 
 <!-- Section Formulaire -->
 <section class="contact-form">
-    <h2>Remplissez le formulaire</h2>
+    <h2>Envoyez-nous un message</h2>
     <form action="send_mail.php" method="POST">
         <label>Nom</label>
         <input type="text" name="nom" required>
