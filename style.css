@@ -12,7 +12,7 @@ body {
     line-height: 1.6;
 }
 
-/* Menu de Navigation */
+/* Navigation Fixe */
 .navbar {
     background: rgba(0, 0, 0, 0.8);
     color: white;
@@ -59,7 +59,7 @@ body {
     text-decoration: underline;
 }
 
-/* HERO Section */
+/* Hero Section */
 header.hero {
     height: 100vh;
     background: url('https://source.unsplash.com/1600x900/?technology,business') no-repeat center center/cover;
@@ -86,6 +86,22 @@ header.hero {
     margin: 1rem 0 2rem;
 }
 
+/* Petit Hero */
+header.hero-small {
+    height: 300px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header.hero-small h1 {
+    font-size: 3rem;
+}
+
+/* CTA Button */
 .cta-btn {
     display: inline-block;
     background: #ff4500;
@@ -96,13 +112,14 @@ header.hero {
     text-decoration: none;
     border-radius: 50px;
     transition: all 0.3s ease;
+    margin: 0 auto;
 }
 
 .cta-btn:hover {
     background: #e63946;
 }
 
-/* Présentation */
+/* Section Présentation */
 .presentation {
     background: #fff;
     padding: 4rem 2rem;
@@ -120,17 +137,7 @@ header.hero {
     margin: 1rem 0 2rem;
 }
 
-a.cta-link {
-    color: #ff4500;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a.cta-link:hover {
-    text-decoration: underline;
-}
-
-/* Services */
+/* Section Services */
 .services {
     background: #f0f0f0;
     padding: 4rem 2rem;
@@ -160,6 +167,19 @@ a.cta-link:hover {
     color: #555;
 }
 
+/* Section CTA */
+.cta-section {
+    background: #222;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -178,35 +198,55 @@ footer a:hover {
     color: #e63946;
 }
 
-/* Navigation Fixe */
-.navbar {
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 1rem 2rem;
-    position: fixed;
+/* Centrage Global */
+.centered-content {
+    text-align: center;
+    margin: 2rem auto;
+    width: 80%;
+}
+
+/* Formulaire */
+.contact-form form {
+    margin: auto;
+    width: 60%;
+}
+
+.contact-form label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
     width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 10;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-/* Titres */
-header.hero-small {
-    height: 300px;
-    background: rgba(0, 0, 0, 0.7);
+.contact-form button {
+    width: 100%;
+    background: #ff4500;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #e63946;
+}
+
+/* Correctif Cards & Listes */
+.team-cards, .solution-details ul {
+    list-style: none;
+    padding: 0;
     text-align: center;
 }
 
-header.hero-small h1 {
-    font-size: 3rem;
-}
-
-.section-title, h2 {
-    font-size: 2.5rem;
-    text-align: center;
+.team-cards .card, .solution-details ul li {
     margin-bottom: 2rem;
 }

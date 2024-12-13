@@ -26,8 +26,8 @@
     <h1>Contactez-nous</h1>
 </header>
 
-<!-- Section Formulaire -->
-<section class="contact-form">
+<!-- Section Formulaire Centrée -->
+<section class="contact-form centered-content">
     <h2>Envoyez-nous un message</h2>
     <form action="send_mail.php" method="POST">
         <label>Nom</label>

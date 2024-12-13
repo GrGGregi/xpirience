@@ -26,8 +26,8 @@
     <h1>Découvrez la Solution KANZen</h1>
 </header>
 
-<!-- Section Fonctionnalités -->
-<section class="solution-details">
+<!-- Section Fonctionnalités Centrée -->
+<section class="solution-details centered-content">
     <h2>Avantages Clés</h2>
     <ul>
         <li><strong>Centralisation des données :</strong> Un espace unique pour vos clients et projets.</li>
@@ -36,8 +36,8 @@
     </ul>
 </section>
 
-<!-- Section CTA -->
-<section class="cta-section">
+<!-- Section CTA Centrée -->
+<section class="cta-section centered-content">
     <h2>Besoin de plus d'informations ?</h2>
     <a href="contact.php" class="cta-btn">Contactez-nous</a>
 </section>

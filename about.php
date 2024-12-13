@@ -26,14 +26,14 @@
     <h1>À propos de xPirience</h1>
 </header>
 
-<!-- Section Présentation -->
-<section class="presentation">
+<!-- Section Présentation Centrée -->
+<section class="presentation centered-content">
     <h2>Notre Mission</h2>
     <p>KANZen est une solution complète développée par xPirience pour centraliser, automatiser et optimiser les processus des TPE et PME.</p>
 </section>
 
-<!-- Section Équipe -->
-<section class="team">
+<!-- Section Équipe Centrée -->
+<section class="team centered-content">
     <h2>Notre Équipe</h2>
     <div class="team-cards">
         <div class="card">
