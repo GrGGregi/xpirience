@@ -1,5 +1,5 @@
 <?php 
-$title = "KANZen - Solution - xPirience";
+$title = "KANZen by xPirience";
 include 'header.php'; 
 ?>
 
