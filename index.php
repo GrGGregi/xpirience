@@ -22,11 +22,11 @@
     </div>
 </nav>
 
-<!-- En-tête principal -->
+<!-- En-tête Principal -->
 <header class="hero">
     <div class="hero-content">
         <h1 class="hero-title">KANZen</h1>
-        <p class="hero-subtitle">Une solution centralisée pour digitaliser et optimiser les entreprises</p>
+        <p class="hero-subtitle">Une solution complète pour digitaliser et optimiser votre entreprise</p>
         <a href="contact.php" class="cta-btn">Prenez contact dès maintenant</a>
     </div>
 </header>
@@ -34,8 +34,33 @@
 <!-- Section Présentation -->
 <section class="presentation">
     <h2>À propos de KANZen</h2>
-    <p>KANZen est une solution complète développée par xPirience pour automatiser, centraliser et optimiser les processus métiers des TPE et PME.</p>
+    <p>KANZen est une solution tout-en-un développée par xPirience. Centralisez vos données, automatisez vos processus et gagnez en efficacité.</p>
     <a href="solution.php" class="cta-link">Découvrir nos fonctionnalités</a>
+</section>
+
+<!-- Section Services -->
+<section class="services">
+    <h2 class="section-title">Nos Services</h2>
+    <div class="service-cards">
+        <div class="card">
+            <h3>Consulting & Stratégie</h3>
+            <p>Développez votre activité avec notre expertise.</p>
+        </div>
+        <div class="card">
+            <h3>Solution Personnalisée</h3>
+            <p>Profitez d'une plateforme personnalisée.</p>
+        </div>
+        <div class="card">
+            <h3>Support & Maintenance</h3>
+            <p>Une assistance proactive et dédiée.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Section CTA -->
+<section class="cta-section">
+    <h2>Prêt à transformer votre entreprise ?</h2>
+    <a href="contact.php" class="cta-btn">Contactez nos experts</a>
 </section>
 
 <!-- Footer -->
