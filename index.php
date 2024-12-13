@@ -13,43 +13,69 @@
 <header class="hero">
     <div class="hero-content">
         <h1 class="hero-title">KANZen</h1>
-        <p class="hero-subtitle">La solution ultime pour digitaliser et optimiser votre entreprise</p>
+        <p class="hero-subtitle">Une solution centralisée pour digitaliser et optimiser les entreprises</p>
         <a href="contact.php" class="cta-btn">Prenez contact dès maintenant</a>
     </div>
 </header>
 
-<!-- Section Points Forts -->
+<!-- Section Présentation -->
+<section class="presentation">
+    <h2>À propos de KANZen</h2>
+    <p>KANZen est une solution digitale complète développée par xPirience. Notre objectif est de centraliser vos données, automatiser vos processus et améliorer la performance globale de votre entreprise.</p>
+    <a href="solution.php" class="cta-link">Découvrir nos fonctionnalités</a>
+</section>
+
+<!-- Section À propos de xPirience -->
+<section class="about-xpirience">
+    <h2>Qui sommes-nous ?</h2>
+    <p>xPirience est une société suisse spécialisée dans le développement de solutions digitales sur mesure. Forts de 25 ans d'expérience, nous créons des technologies innovantes adaptées aux besoins des PME et TPE.</p>
+    <a href="about.php" class="cta-link">En savoir plus sur xPirience</a>
+</section>
+
+<!-- Section Avantages clés -->
 <section class="features">
-    <h2 class="section-title">Pourquoi choisir KANZen ?</h2>
-    <div class="feature-cards">
+    <h2>Les avantages de KANZen</h2>
+    <ul>
+        <li><strong>Centralisation des données :</strong> Un seul espace pour vos collaborateurs, clients et projets.</li>
+        <li><strong>Sécurité renforcée :</strong> Hébergement sécurisé et conformité RGPD.</li>
+        <li><strong>Déploiement rapide :</strong> Mise en place facile et personnalisable.</li>
+        <li><strong>Tarification transparente :</strong> Un coût unique par collaborateur, sans frais cachés.</li>
+    </ul>
+</section>
+
+<!-- Section Modules et Fonctionnalités -->
+<section class="modules">
+    <h2>Fonctionnalités Clés</h2>
+    <div class="module-cards">
         <div class="card">
-            <h3>Centralisation des données</h3>
-            <p>Regroupez toutes vos informations essentielles sur une seule plateforme sécurisée.</p>
+            <h3>Gestion des Ressources Humaines</h3>
+            <p>Gérez les absences, la paie, les formations et bien plus encore.</p>
         </div>
         <div class="card">
-            <h3>Expérience Utilisateur</h3>
-            <p>Une interface intuitive conçue pour favoriser l’adoption rapide et simplifier votre quotidien.</p>
+            <h3>CRM Intégré</h3>
+            <p>Améliorez votre relation client grâce à un suivi complet des prospects et opportunités.</p>
         </div>
         <div class="card">
-            <h3>Sécurité Renforcée</h3>
-            <p>Protégez vos données avec les dernières technologies de sécurité et conformité.</p>
+            <h3>Automatisation des Processus</h3>
+            <p>Simplifiez les tâches répétitives grâce à des workflows personnalisés.</p>
         </div>
         <div class="card">
-            <h3>Déploiement Rapide</h3>
-            <p>Déployez facilement la solution et commencez à travailler sans attendre.</p>
+            <h3>Reporting et Analytique</h3>
+            <p>Suivez vos performances grâce à des tableaux de bord interactifs.</p>
         </div>
     </div>
 </section>
 
-<!-- Section CTA Secondaire -->
+<!-- Section CTA -->
 <section class="cta-section">
     <h2>Prêt à transformer votre entreprise ?</h2>
-    <a href="contact.php" class="cta-btn cta-btn-dark">Contactez nos experts</a>
+    <a href="contact.php" class="cta-btn">Contactez nos experts</a>
 </section>
 
 <!-- Footer -->
 <footer>
     <p>&copy; 2024 xPirience Sàrl - Tous droits réservés</p>
+    <p>Maintenu avec ♡ par <a href="https://ezyostudio.com" target="_blank">EzyoStudio</a>.</p>
 </footer>
 
 </body>

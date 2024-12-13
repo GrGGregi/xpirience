@@ -1,4 +1,4 @@
-/* Reset de base */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +12,18 @@ body {
     line-height: 1.6;
 }
 
+/* Liens */
+a.cta-link {
+    color: #ff4500;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.cta-link:hover {
+    text-decoration: underline;
+}
+
+/* HERO Section */
 header.hero {
     height: 100vh;
     background: url('https://source.unsplash.com/1600x900/?business,technology') no-repeat center center/cover;
@@ -54,18 +66,46 @@ header.hero {
     background: #e63946;
 }
 
-.features {
-    background: white;
+/* Section Présentation */
+.presentation, .about-xpirience {
+    background: #fff;
     padding: 4rem 2rem;
     text-align: center;
 }
 
-.section-title {
+.presentation h2, .about-xpirience h2 {
     font-size: 2.5rem;
-    margin-bottom: 2rem;
 }
 
-.feature-cards {
+.presentation p, .about-xpirience p {
+    margin: 1rem 0 2rem;
+}
+
+/* Section Features */
+.features {
+    background: #f0f0f0;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+/* Section Modules */
+.modules {
+    background: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.module-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
@@ -88,21 +128,14 @@ header.hero {
     color: #555;
 }
 
-.cta-section {
-    background: #333;
-    color: white;
-    padding: 3rem;
-    text-align: center;
-}
-
-.cta-btn-dark {
-    background: white;
-    color: #333;
-}
-
 footer {
     text-align: center;
     padding: 1rem;
     background: #222;
     color: white;
+}
+
+footer a {
+    color: #ff4500;
+    text-decoration: none;
 }
